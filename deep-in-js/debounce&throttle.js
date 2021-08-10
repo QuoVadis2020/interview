@@ -2,7 +2,7 @@
  * 防抖和节流都是在指定时间间隔内防止函数多次调用
  */
 
-// 只执行一次任务
+// 防抖是只执行一次任务
 function throttle(fn, delay = 300) {
     let start = Date.now()
     let now
@@ -21,7 +21,7 @@ function throttle(fn, delay = 300) {
     }
 }
 
-// 将多次执行变为最后一次执行
+// 节流是将多次执行变为最后一次执行
 const debounce = (fn, delay = 300) => {
     let timer
     return () => {
