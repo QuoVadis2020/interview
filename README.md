@@ -7,7 +7,7 @@
 -   [x] 实现防抖节流
 -   [ ] call、apply、bind
 -   [ ] new、instance
--   [ ] 深拷贝
+-   [x] 深拷贝
 -   [ ] Promise
 -   [ ] EventHub
 -   [ ] 解析 URL
