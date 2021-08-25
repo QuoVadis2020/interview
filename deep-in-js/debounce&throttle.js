@@ -6,13 +6,16 @@
 // 回城
 const debounce = (fn, delay = 300) => {
     let timer
-    return () => {
+    return (...args) => {
         clearTimeout(timer)
-        timer = setTimeout((...args) => {
+        timer = setTimeout(() => {
             fn.apply(this, args)
         })
     }
 }
+const debFn = debounce(fn)
+
+debFn(x,y)
 
 // 节流：动作发生后一段时间后触发事件，在这段时间内，如果动作又发生，则无视该动作，直到事件执行完后，才能重新触发
 // 技能CD
