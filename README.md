@@ -12,7 +12,7 @@
 -   [ ] EventHub
 -   [ ] 解析 URL
 -   [ ] 柯里化
--   [ ] AJAX
+-   [x] AJAX
 
 #### 常见 API 实现
 
